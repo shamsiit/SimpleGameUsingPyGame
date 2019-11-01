@@ -1,26 +1,57 @@
 # SimpleGameUsingPyGame
 
-This is an basic game written by python language with help of pygame
+This is an basic game written by python language with help of [pygame](https://www.pygame.org/)
 
-function used in this project
+## Gameplay
 
-
-the image must be in the same folder where the python file located
-
-
-pygame.display.set_mode(screensize) for set screen size
-
-pygame.image.load("imagename") for load image in a variable
-
-pygame.event.get() for identifing key_pressed
-
-pygame.display.update()  for updating the screen
+- press `q` to quit the game.
+- press  `spacebar` to shoot the planet !
 
 
-screen.blit(background, [0,0]) for setting the image in display
-  left top corner is (0,0) coordinate
-  horizontal axis is x axis
-  and top to bottom is y axis
+
+## Dev notes 
+
+#### functions used in this project
+
+- To set screen size:
+
+  ```python
+  pygame.display.set_mode(screensize)
+  ```
+
+  change value of *screensize* 
+
+  
+
+- to load image in a variable:
+
+  ```python
+  pygame.image.load("imagename") 
+  ```
+
+  change value of *imagename*
+
+- to identify key pressed, look through:
+
+  ```python
+  pygame.key.get_pressed() 
+  ```
+
+- for updating the screen
+
+  ```python
+  pygame.display.update()
+  ```
+
+- for setting the image positions in game screen:
+
+  ```python
+  screen.blit(image_name,screen_position) 
+  ```
+
+  - different screen positions:
+    - left top corner is (0,0) coordinate
+    - horizontal axis is x axis
+    - top to bottom is y axis
+
  
- 
-

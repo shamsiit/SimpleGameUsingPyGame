@@ -9,15 +9,15 @@ pygame.event.get()
 
 screen_size =[360, 600]
 screen = pygame.display.set_mode(screen_size)
-background = pygame.image.load('background.png')
-bullet = pygame.image.load('bullet.png')
-one = pygame.image.load('one.png')
-two = pygame.image.load('two.png')
-three = pygame.image.load('three.png')
-ship = pygame.image.load('spaceship.png')
+background = pygame.image.load('./images/background.png')
+bullet = pygame.image.load('./images/bullet.png')
+one = pygame.image.load('./images/one.png')
+two = pygame.image.load('./images/two.png')
+three = pygame.image.load('./images/three.png')
+ship = pygame.image.load('./images/spaceship.png')
 clock = pygame.time.Clock()
 cycles = 0
-planet = ['one.png', 'two.png', 'three.png']
+planet = ['./images/one.png', './images/two.png', './images/three.png']
 index = 0
 keep_alive = True
 move_direction = 'right'
@@ -28,7 +28,7 @@ while keep_alive == True:
     for event in pygame.event.get():
         keys = pygame.key.get_pressed()
         if keys[pygame.K_q] == True:
-            print("Space key pressed")
+            print("q for quit!")
             keep_alive = False
         if keys[pygame.K_SPACE] == True:
             Fired = True
